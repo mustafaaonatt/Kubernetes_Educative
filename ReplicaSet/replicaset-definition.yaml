@@ -6,7 +6,7 @@ metadata:
     app: myapp
     type: frond-end
 spec: 
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: myapp
