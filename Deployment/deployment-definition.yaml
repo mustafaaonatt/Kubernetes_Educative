@@ -7,7 +7,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      type: myapp
+      type: frond-end
   template:
     metadata:
       name: myapp-pod
