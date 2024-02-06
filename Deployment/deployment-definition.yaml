@@ -2,7 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp-deployment
-  type: front-end
+  labels:
+    app: myapp
+    type: front-end
 spec:
   replicas: 3
   selector:
