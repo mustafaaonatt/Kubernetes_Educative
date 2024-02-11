@@ -6,6 +6,8 @@ metadata:
   name: sample-pod
 spec:
   containers:
-  - image: nginx
-    name: sample-pod
-    
+    - image: nginx
+      name: sample-pod
+
+
+##  kubectl run sample-pod --image=nginx --dry-run=client -o yaml > sample-pod.yaml
