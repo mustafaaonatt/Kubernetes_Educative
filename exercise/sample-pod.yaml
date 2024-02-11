@@ -13,3 +13,5 @@ spec:
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 status: {}
+
+# kubectl run first-pod --image=nginx --dry-run=client -o yaml > sample-pod.yaml
