@@ -1,7 +1,6 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  creationTimestamp: null
   labels:
     run: sample-pod
   name: sample-pod
@@ -9,7 +8,7 @@ spec:
   containers:
   - image: nginx
     name: sample-pod
-    resources: {}
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
-status: {}
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
