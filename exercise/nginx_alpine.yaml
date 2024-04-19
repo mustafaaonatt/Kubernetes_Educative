@@ -9,7 +9,7 @@ spec:
   containers:
   - image: nginx:alpine
     name: nginx
-    resources: {}
+    resources: 
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 status: {}
